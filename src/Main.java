@@ -31,7 +31,7 @@ public class Main {
             rec = ID + ", " + firstName + ", " + lastName + ", " + title + ", " + YOB;
             people.add(rec);
 
-            doneInput = SafeInput.getYNConfirm(in, "Are you done? [Y/N]");
+            doneInput = SafeInput.getYNConfirm(in, "Are you done?");
         }while (!doneInput);
 
         System.out.println(rec);
