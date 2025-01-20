@@ -74,7 +74,7 @@ public class PersonReader
                             title     = fields[3].trim();
                             yob       = Integer.parseInt(fields[4].trim());
 
-                            System.out.printf("%-8s%-25s%-25s%-6s%6d", id, firstName, lastName, title, yob);
+                            System.out.printf("\n%-8s%-25s%-25s%-6s%6d", id, firstName, lastName, title, yob);
                         }
                         else {
                             System.out.println("Found a record that may be corrupt: ");

@@ -35,11 +35,12 @@ public class PersonGenerator {
 
             rec = ID + ", " + firstName + ", " + lastName + ", " + title + ", " + YOB;
             people.add(rec);
+            System.out.println(rec);
 
             doneInput = SafeInput.getYNConfirm(in, "Are you done?");
         }while (!doneInput);
 
-        System.out.println(rec);
+
 
 
     File workingDirectory = new File(System.getProperty("user.dir"));
@@ -59,7 +60,7 @@ public class PersonGenerator {
 
             for(String person : people)
             {
-                writer.write(rec, 0, rec.length());  // stupid syntax for write rec
+                writer.write(person, 0, person.length());  // stupid syntax for write rec
                 // 0 is where to start (1st char) the write
                 // rec. length() is how many chars to write (all)
                 writer.newLine();  // adds the new line
